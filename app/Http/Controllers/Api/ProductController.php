@@ -43,7 +43,7 @@ class ProductController extends Controller
     $user = auth('api')->user();
     $validator = $this->repo->canValidate([
       'name' => 'required',
-      'price' => 'required',
+      'price' => ['nullable', 'integer', 'min:1'],
       'description' => 'required',
       'is_active' => 'required',
       'store_id' => [
@@ -71,6 +71,7 @@ class ProductController extends Controller
     } catch (\Throwable $th) {
       //throw $th;
       DB::rollBack();
+      return apiError("Error");
     }
   }
   public function update($id, Request $request)
@@ -78,7 +79,7 @@ class ProductController extends Controller
     $user = auth('api')->user();
     $validator = $this->repo->canValidate([
       'name' => 'required',
-      'price' => 'required',
+      'price' => ['nullable', 'integer', 'min:1'],
       'description' => 'required',
       'is_active' => 'required',
       'store_id' => [
