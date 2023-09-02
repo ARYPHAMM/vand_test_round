@@ -28,7 +28,7 @@
         DB_HOST=mysql
         DB_PORT=3306
         DB_USERNAME=root
-        DB_DATABASE=laravel (you can change, if you want)
+        DB_DATABASE=laravel #(you can change, if you want)
         DB_PASSWORD=password
   </pre>
     
