@@ -13,7 +13,7 @@
         + composer install
         + php artisan config:clear
         + php artisan config:cache
-        + php artisan db:seed --class="UserSeeder"
+        + php artisan db:seed --class="UserSeeder" (create use data for test with infor 0939432055/123456, will help you log in)
     </pre>
 </div>
 <div>
