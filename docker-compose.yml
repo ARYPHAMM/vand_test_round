@@ -1,0 +1,76 @@
+version: "3"
+services:
+  dev_web_test_round:
+    build: 
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: dev_web_test_round
+    working_dir: /var/www/html
+    ports: 
+      - "80:80"
+    volumes: 
+          - .:/var/www/html
+          - ./docker/nginx_log:/var/log/nginx
+          - ./docker/php-fpm/php-fpm.log:/var/log/php-fpm.log
+          - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
+          - ./docker/init-scripts/:/init-scripts/
+          # - ./docker/crontab:/etc/crontab
+          # - ./docker/config/supervisord.conf:/etc/supervisord.conf
+          # - ./docker/config/start.sh:/start.sh
+    links: 
+      - mysql
+      # - dev_web_test_round
+  mysql:
+    platform: linux/amd64
+    image: mysql:5.7.35
+    container_name: db_test_round
+    ports: 
+      - "3308:3306"
+    volumes: 
+      - ./docker/mysql:/var/lib/mysql
+    environment:
+        MYSQL_DATABASE: laravel
+        MYSQL_ROOT_PASSWORD: password
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: phpmyadmin_test_round
+      # restart: unless-stopped
+      restart: always
+      ports: 
+          - 8200:80
+      environment:
+          PMA_HOST: mysql
+          PMA_PORT: 3306
+          PMA_USER: root
+          PMA_PASSWORD: password
+          UPLOAD_LIMIT: 400M
+      links: 
+        - mysql
+  redis:
+    image: 'redis:alpine'
+    ports:
+      - '6379:6379'
+  # selenium:
+  #   image: selenium/standalone-chrome:4.3
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   ports:
+  #     - "4444:4444"
+  #     - "7900:7900"
+  #   environment:
+  #       VNC_NO_PASSWORD: 1
+  # npm:
+  #   image: node:14-alpine
+  #   container_name: my-app-npm
+  #   working_dir: /var/www/html
+  #   volumes:
+  #     - .:/var/www/html
+  #     - ./docker/init-scripts/:/init-scripts/
+  #   entrypoint:
+  #     - /init-scripts/node_start.sh
+  #   depends_on:
+  #      - dev_web_test_round
+  #   ports:
+  #     - "3000:3000"
+  #     - "3001:3001"
+

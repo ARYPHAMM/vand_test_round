@@ -1,0 +1,102 @@
+2023/08/30 02:35:49 [notice] 38#38: using the "epoll" event method
+2023/08/30 02:35:49 [notice] 38#38: nginx/1.21.6
+2023/08/30 02:35:49 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/30 02:35:49 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/08/30 02:35:49 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/30 02:35:49 [notice] 38#38: start worker processes
+2023/08/30 02:35:49 [notice] 38#38: start worker process 43
+2023/08/30 02:35:49 [notice] 38#38: start worker process 45
+2023/08/30 02:35:49 [notice] 38#38: start worker process 47
+2023/08/30 02:35:49 [notice] 38#38: start worker process 48
+2023/08/30 02:35:49 [notice] 38#38: start worker process 50
+2023/08/30 02:35:49 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/08/30 02:35:49 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/08/30 02:35:49 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2023/08/30 02:35:49 [emerg] 50#50: io_setup() failed (38: Function not implemented)
+2023/08/30 02:35:49 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/08/30 08:34:52 [notice] 38#38: using the "epoll" event method
+2023/08/30 08:34:52 [notice] 38#38: nginx/1.21.6
+2023/08/30 08:34:52 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/30 08:34:52 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/08/30 08:34:52 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/30 08:34:52 [notice] 38#38: start worker processes
+2023/08/30 08:34:52 [notice] 38#38: start worker process 43
+2023/08/30 08:34:52 [notice] 38#38: start worker process 44
+2023/08/30 08:34:52 [notice] 38#38: start worker process 46
+2023/08/30 08:34:52 [notice] 38#38: start worker process 47
+2023/08/30 08:34:52 [notice] 38#38: start worker process 49
+2023/08/30 08:34:52 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/08/30 08:34:52 [emerg] 44#44: io_setup() failed (38: Function not implemented)
+2023/08/30 08:34:52 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/08/30 08:34:52 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2023/08/30 08:34:52 [emerg] 49#49: io_setup() failed (38: Function not implemented)
+2023/08/30 15:03:33 [notice] 38#38: using the "epoll" event method
+2023/08/30 15:03:33 [notice] 38#38: nginx/1.21.6
+2023/08/30 15:03:33 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/30 15:03:33 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/08/30 15:03:33 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/30 15:03:33 [notice] 38#38: start worker processes
+2023/08/30 15:03:33 [notice] 38#38: start worker process 43
+2023/08/30 15:03:33 [notice] 38#38: start worker process 45
+2023/08/30 15:03:33 [notice] 38#38: start worker process 47
+2023/08/30 15:03:33 [notice] 38#38: start worker process 48
+2023/08/30 15:03:33 [notice] 38#38: start worker process 51
+2023/08/30 15:03:33 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/08/30 15:03:33 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/08/30 15:03:33 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2023/08/30 15:03:33 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/08/30 15:03:33 [emerg] 51#51: io_setup() failed (38: Function not implemented)
+2023/08/30 15:31:05 [warn] 48#48: *36 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 172.18.0.1, server: localhost, request: "POST /api/v1/uploads/images HTTP/1.1", host: "127.0.0.1:80"
+2023/08/30 15:32:53 [warn] 51#51: *42 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.18.0.1, server: localhost, request: "POST /api/v1/uploads/images HTTP/1.1", host: "127.0.0.1:80"
+2023/08/30 23:54:27 [notice] 37#37: using the "epoll" event method
+2023/08/30 23:54:27 [notice] 37#37: nginx/1.21.6
+2023/08/30 23:54:27 [notice] 37#37: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/30 23:54:27 [notice] 37#37: OS: Linux 5.15.49-linuxkit
+2023/08/30 23:54:27 [notice] 37#37: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/30 23:54:27 [notice] 37#37: start worker processes
+2023/08/30 23:54:27 [notice] 37#37: start worker process 42
+2023/08/30 23:54:27 [notice] 37#37: start worker process 44
+2023/08/30 23:54:27 [notice] 37#37: start worker process 46
+2023/08/30 23:54:27 [notice] 37#37: start worker process 48
+2023/08/30 23:54:27 [notice] 37#37: start worker process 49
+2023/08/30 23:54:27 [emerg] 42#42: io_setup() failed (38: Function not implemented)
+2023/08/30 23:54:27 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2023/08/30 23:54:27 [emerg] 44#44: io_setup() failed (38: Function not implemented)
+2023/08/30 23:54:27 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/08/30 23:54:27 [emerg] 49#49: io_setup() failed (38: Function not implemented)
+2023/08/31 05:13:15 [notice] 38#38: using the "epoll" event method
+2023/08/31 05:13:15 [notice] 38#38: nginx/1.21.6
+2023/08/31 05:13:15 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/31 05:13:15 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/08/31 05:13:15 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/31 05:13:15 [notice] 38#38: start worker processes
+2023/08/31 05:13:15 [notice] 38#38: start worker process 43
+2023/08/31 05:13:15 [notice] 38#38: start worker process 44
+2023/08/31 05:13:15 [notice] 38#38: start worker process 46
+2023/08/31 05:13:15 [notice] 38#38: start worker process 47
+2023/08/31 05:13:15 [notice] 38#38: start worker process 48
+2023/08/31 05:13:15 [emerg] 44#44: io_setup() failed (38: Function not implemented)
+2023/08/31 05:13:15 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2023/08/31 05:13:15 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2023/08/31 05:13:15 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/08/31 05:13:15 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2023/08/31 05:57:37 [warn] 47#47: *17 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 172.19.0.1, server: localhost, request: "POST /api/v1/uploads/images HTTP/1.1", host: "127.0.0.1:80"
+2023/08/31 06:22:17 [warn] 44#44: *46 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000002, client: 172.19.0.1, server: localhost, request: "POST /api/v1/uploads/images?type=member&files[] HTTP/1.1", host: "127.0.0.1:80"
+2023/08/31 07:28:54 [warn] 44#44: *102 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000003, client: 172.19.0.1, server: localhost, request: "POST /api/v1/uploads/images?type=member&files[] HTTP/1.1", host: "127.0.0.1:80"
+2023/08/31 08:44:09 [notice] 38#38: using the "epoll" event method
+2023/08/31 08:44:09 [notice] 38#38: nginx/1.21.6
+2023/08/31 08:44:09 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2023/08/31 08:44:09 [notice] 38#38: OS: Linux 5.15.49-linuxkit
+2023/08/31 08:44:09 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/31 08:44:09 [notice] 38#38: start worker processes
+2023/08/31 08:44:09 [notice] 38#38: start worker process 43
+2023/08/31 08:44:09 [notice] 38#38: start worker process 45
+2023/08/31 08:44:09 [notice] 38#38: start worker process 46
+2023/08/31 08:44:09 [notice] 38#38: start worker process 49
+2023/08/31 08:44:09 [notice] 38#38: start worker process 50
+2023/08/31 08:44:09 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2023/08/31 08:44:09 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2023/08/31 08:44:09 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2023/08/31 08:44:09 [emerg] 50#50: io_setup() failed (38: Function not implemented)
+2023/08/31 08:44:09 [emerg] 49#49: io_setup() failed (38: Function not implemented)
+2023/08/31 10:40:36 [warn] 46#46: *152 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000001, client: 172.18.0.1, server: localhost, request: "POST /api/v1/uploads/images?type=member&files[] HTTP/1.1", host: "127.0.0.1:80"
