@@ -20,3 +20,16 @@
    - Link postman
    https://api.postman.com/collections/16766312-28cd91f9-4735-4894-8910-faffbc4a8188?access_key=PMAT-01H9B75B22HHV83ET1WGE7C1AW
 </div>
+<div>
+    - docker (if you have use then you need to edit .env file)
+  <pre>
+        APP_URL=http://localhost
+        DB_CONNECTION=mysql
+        DB_HOST=mysql
+        DB_PORT=3306
+        DB_USERNAME=root
+        DB_DATABASE=laravel (you can change, if you want)
+        DB_PASSWORD=password
+  </pre>
+    
+</div>
