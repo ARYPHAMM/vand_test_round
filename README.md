@@ -11,6 +11,7 @@
     - Step up
     <pre>
         + composer install
+        + php artisan migrate
         + php artisan config:clear
         + php artisan config:cache
         + php artisan db:seed --class="UserSeeder" (create use data for test with infor 0939432055/123456, will help you log in)
